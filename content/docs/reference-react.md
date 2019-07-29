@@ -126,7 +126,7 @@ const MyComponent = React.memo(function MyComponent(props) {
 
 `React.memo` is a [higher order component](/docs/higher-order-components.html). It's similar to [`React.PureComponent`](#reactpurecomponent) but for function components instead of classes.
 
-If your function component renders the same result given the same props, you can wrap it in a call to `React.memo` for a performance boost in some cases by memoizing the result. This means that React will skip rendering the component, and reuse the last rendered result.
+If your function component renders the same result given the same props, you can wrap it in a call to `React.memo` for a performance boost in some cases by memorizing the result. This means that React will skip rendering the component, and reuse the last rendered result.
 
 By default it will only shallowly compare complex objects in the props object. If you want control over the comparison, you can also provide a custom comparison function as the second argument.
 
